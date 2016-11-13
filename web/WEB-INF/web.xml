@@ -7,8 +7,16 @@
         <servlet-name>HelloWorldServlet</servlet-name>
         <servlet-class>HelloWorldServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SignGuestbookServlet</servlet-name>
+        <servlet-class>SignGuestbookServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/HelloWorld</url-pattern>
     </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>guestbook.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
